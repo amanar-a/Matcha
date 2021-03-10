@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Coiny");
+
+/*--------------------Text first pages with animation --------------------*/
+.cloud-text {
+  font-family: "Coiny", cursive;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/clouds.jpg);
+  background-size: auto;
+  background-attachment: unset;
+  background-position: 0%;
+  font-size: 9vw;
+  animation: clouds-moving infinite 220s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  text-align: center;
+}
+@keyframes clouds-moving {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+.attribute {
+  position: relative;
+  font-size: 26px;
+  text-align: center;
+}
+
+/*--------------------add image with animation --------------------*/
+.add_img {
+  -webkit-animation: add_img 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: add_img 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@media screen and (min-width: 1016px) {
+  .cloud-text {
+    font-size: 100px;
+  }
+}
+
+@-webkit-keyframes add_img {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes add_img {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+
+/*--------------------remove image with animation --------------------*/
+.remove_img {
+  -webkit-animation: remove_img 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: remove_img 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@-webkit-keyframes remove_img {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+}
+@keyframes remove_img {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+}

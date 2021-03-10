@@ -1,0 +1,77 @@
+.history .MuiBox-root {
+  display: flex;
+
+  padding: 0;
+  padding-top: 24px;
+  padding-left: 19px;
+  padding-bottom: 8px;
+}
+
+.actions_div {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.history {
+  overflow-y: scroll;
+  height: 100%;
+  width: 90%;
+}
+.history::-webkit-scrollbar {
+  display: none;
+}
+
+.history .MuiAppBar-colorPrimary {
+  background-color: #308fb4;
+}
+
+.history_img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.history_p {
+  color: grey;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.history_profile {
+  color: black;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.history_information {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.history_blok {
+  width: 100%;
+  display: flex;
+  margin-top: 8px;
+  border-bottom: 1px solid #80808042;
+  padding-bottom: 12px;
+}
+
+.history_information .MuiButton-containedPrimary {
+  background-color: #fb7d7de8;
+}
+
+.history_information .MuiButton-containedPrimary:hover {
+  background-color: #fb7d7d !important;
+}
+@media screen and (max-width: 410px) {
+  .history_information {
+    justify-content: center;
+    flex-flow: column;
+  }
+}

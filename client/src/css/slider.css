@@ -1,0 +1,134 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap";
+.slider {
+  height: 150px;
+  margin-top: 20px;
+  overflow: hidden;
+  display: flex;
+  max-height: auto;
+  overflow-y: hidden;
+  overflow-x: scroll !important;
+  transform: scroll(calc(var(--i, 0) / var(--n) * -100%));
+  scroll-behavior: smooth;
+}
+.slider::-webkit-scrollbar {
+  height: 5px;
+  width: 150px;
+  display: none;
+}
+.slider::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slider::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.slider::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.deleteImgprofile:hover,
+.defaultImgProfile:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+.slide {
+  position: relative;
+}
+.slide img {
+  overflow: hidden;
+  height: 100%;
+  width: 200px;
+  margin: 0 4px;
+  object-fit: cover;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+.control-prev-btn {
+  position: absolute;
+  top: 47%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.55);
+  height: 50px;
+  line-height: 100px;
+  width: 45px;
+  text-align: center;
+  box-shadow: 0 1px 3px #888;
+  user-select: none;
+  color: #444;
+  cursor: pointer;
+}
+.control-next-btn {
+  position: absolute;
+  top: 47%;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.55);
+  height: 50px;
+  line-height: 100px;
+  width: 45px;
+  text-align: center;
+  box-shadow: 0 1px 3px #888;
+  user-select: none;
+  color: #444;
+  cursor: pointer;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  top: 0;
+  display: none;
+}
+@media only screen and (max-width: 420px) {
+  .slider {
+    padding: 0;
+  }
+  .slide {
+    padding: 16px 10px;
+  }
+  .slide img {
+    margin: 0;
+  }
+  .control-prev-btn {
+    top: 37%;
+  }
+  .control-next-btn {
+    top: 37%;
+  }
+}
+
+.deleteImgprofile {
+  display: block;
+  position: absolute !important;
+  top: -22%;
+  left: 31.5%;
+  line-height: 1 !important;
+  letter-spacing: 0em !important;
+  text-transform: none !important;
+  transition: all 0.5s !important;
+  z-index: 100;
+}
+
+.slide:hover .deleteImgprofile {
+  opacity: 1;
+  top: 29%;
+}
+
+.defaultImgProfile {
+  position: absolute !important;
+  top: 112%;
+  left: 24.5%;
+  line-height: 1 !important;
+  letter-spacing: 0em !important;
+  text-transform: none !important;
+  transition: all 0.5s !important;
+  z-index: 100;
+}
+
+.slide:hover .defaultImgProfile {
+  opacity: 1;
+  top: 54%;
+}
+
+.slide:hover {
+  transform: scale(1.05);
+}

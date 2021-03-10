@@ -1,0 +1,163 @@
+.profileUpperDiv {
+  width: 90%;
+  padding: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 3px 1px #0000004a;
+  background-color: #ececec3d;
+}
+
+.profileImage {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0.5px;
+}
+
+.profile_p {
+  text-align: unset;
+  font-family: none !important;
+  font-weight: 100;
+}
+
+.profileImgDiv {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.nameDiv {
+  display: flex;
+}
+
+.nameDiv .MuiFormControl-root {
+  width: 90% !important;
+}
+
+.profileUpperDiv .MuiOutlinedInput-input {
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.name {
+  width: 50%;
+}
+
+.padd .Select {
+  width: 95% !important;
+  text-align: center;
+  max-width: unset;
+  min-height: unset;
+}
+.padd .SelectList {
+  height: 120px;
+}
+.padd .MuiFormControl-root {
+  width: 95%;
+}
+
+.uploadImg {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 60%;
+  border-radius: 5px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 2px 1px #c8c9cc;
+}
+
+.uploadImg img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.matchrating_Div {
+  display: flex;
+  flex-flow: column;
+}
+
+.matchrating_p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.profileSvg {
+  width: 50px;
+  height: 50px;
+}
+
+.padd .MuiOutlinedInput-multiline {
+  padding: 0;
+}
+
+.waitingScreen {
+  background-color: black;
+  opacity: 0.36;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.waitingEcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.secondetHalf {
+  width: 50%;
+}
+.firstHalf {
+  width: 50%;
+}
+.textFieldsDiv {
+  display: flex;
+}
+@media screen and (max-width: 1300px) {
+  .secondetHalf {
+    width: 100%;
+  }
+  .firstHalf {
+    width: 100%;
+  }
+  .textFieldsDiv {
+    display: block;
+  }
+}
+
+.MsgAlert {
+  z-index: 999;
+}
+.chip {
+  margin: 4px;
+}
+
+.actionButtons {
+  margin-top: 10px;
+}
+
+.actionButtons button:nth-of-type(1) {
+  background-color: #2fb704f0;
+  color: white;
+}
+
+.deletIcon {
+  position: absolute;
+  right: 16px;
+  top: 100px;
+}
+
+.deletIcon:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .actionButtons .MuiButton-root {
+    font-size: 0.8rem;
+  }
+}

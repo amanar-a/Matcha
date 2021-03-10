@@ -1,0 +1,272 @@
+@import "animation.css";
+
+.info_div {
+  padding-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 1px 3px 0.5px grey;
+  background-color: white;
+  border-radius: 8px;
+  max-width: 1000px;
+}
+
+.info_img {
+  width: 350px;
+  height: 300px;
+}
+
+.info_p {
+  width: 13%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-weight: lighter;
+  font-family: none;
+}
+
+.lot_div {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gender_div {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.interest_div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bth {
+  font-family: none !important;
+  font-weight: lighter;
+  font-size: 4px;
+}
+
+@media screen and (max-width: 690px) {
+  .info1 {
+    display: flex;
+    justify-content: center;
+    flex-flow: column-reverse;
+  }
+
+  .info_img {
+    width: 70vw;
+    height: 53vw;
+    max-width: 400px;
+    max-height: 300px;
+  }
+  .birth_div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .info_svg {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.info_next {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.error {
+  color: red;
+  font-family: none;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.MuiInputBase-root {
+  font-family: none !important;
+}
+
+.file {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.div_file {
+  width: 120px;
+  height: 115px;
+  box-shadow: 0px 1px 3px 0.5px grey;
+  border-radius: 4%;
+  margin: 5px;
+}
+
+.img_file {
+  width: 120px;
+  height: 115px;
+  box-shadow: 0px 1px 3px 0.5px grey;
+  margin-left: 7px;
+}
+
+.imag_file_ {
+  width: 120px;
+  height: 115px;
+  box-shadow: 0px 1px 3px 0.5px grey;
+}
+
+.info1 {
+  display: flex;
+  justify-content: center;
+}
+
+.info_image {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.div_img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .MuiSnackbar-anchorOriginBottomCenter {
+    width: 500px;
+  }
+}
+
+.div_resetpass {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.divinput_resetpass {
+  width: 70%;
+  max-width: 300px;
+  margin-top: clamp(10px, 4%, 10px);
+}
+
+.input_resetpass {
+  width: 100%;
+}
+
+.but_resetpass {
+  max-width: 180px;
+}
+.upperdiv {
+  font-size: clamp(16px, 4vw, 30px);
+}
+
+.flexFlowColum {
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+}
+
+.MuiFormGroup-root {
+  display: block !important;
+}
+
+.lot_div .MuiFormControl-root {
+  width: 70% !important;
+}
+
+.MuiInputBase-input {
+  color: rgba(0, 0, 0, 0.54) !important;
+}
+
+.descri_div {
+  width: 70%;
+}
+
+.default {
+  position: absolute !important;
+  top: 110%;
+  left: 14%;
+  line-height: 1 !important;
+  letter-spacing: 0em !important;
+  text-transform: none !important;
+  transition: all 0.5s !important;
+}
+
+.add_img:hover .default {
+  opacity: 1;
+  top: 50%;
+}
+
+.delete {
+  position: absolute !important;
+  top: -28%;
+  left: 25.5%;
+  line-height: 1 !important;
+  letter-spacing: 0em !important;
+  text-transform: none !important;
+  transition: all 0.5s !important;
+}
+
+.add_img:hover .delete {
+  opacity: 1;
+  top: 25%;
+}
+
+.formControl {
+  min-width: 420;
+}
+
+.MuiButton-contained {
+  margin: 5px !important;
+  margin-bottom: 15px !important;
+}
+
+.MuiAlert-icon {
+  display: none !important;
+}
+
+.MuiAlert-message p {
+  text-align: unset;
+  font-weight: lighter;
+  font-family: unset;
+}
+.lot_div .Select {
+  width: 70%;
+  max-width: unset;
+}
+
+.lot_div .SelectList {
+  min-height: 90px;
+  max-height: 140px;
+}
+@media (max-width: 400px) {
+  .lot_div {
+    display: flex;
+    margin-left: 11px;
+    flex-flow: column;
+  }
+  .info_p {
+    width: 100%;
+    margin: 1px;
+  }
+  .lot_div .MuiFormControl-root {
+    width: 96% !important;
+  }
+  .lot_div .Select {
+    width: 95%;
+    max-width: unset;
+    min-height: unset;
+  }
+  .lot_div .SelectList {
+    height: 80px;
+  }
+  .info_image {
+    width: 100%;
+  }
+  .div_file {
+    margin: 0px;
+    margin-left: 7px;
+  }
+}

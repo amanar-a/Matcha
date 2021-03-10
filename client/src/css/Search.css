@@ -1,0 +1,29 @@
+.Search {
+  width: 90%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+  color: #4c4b4b;
+  transition: 0.5s linear;
+}
+.Search .Icons {
+  fill: black;
+}
+.Search input {
+  width: 90%;
+  height: 24px;
+  border: none;
+  outline: none;
+  transition: 0.5s linear;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  color: #4c4b4b;
+}
+.Search span {
+  margin: 0px 7px;
+}

@@ -1,0 +1,165 @@
+.creatacc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgba(108, 98, 254, 0.58);
+  overflow: hidden;
+}
+
+.link {
+  width: fit-content;
+  color: #6c63ff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.img_createacc {
+  width: 450px;
+  height: 300px;
+}
+div::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 690px) {
+  .creatacc {
+    margin: 0;
+    display: block;
+    overflow: hidden;
+  }
+  p {
+    display: block;
+  }
+  .img_createacc {
+    width: 70vw;
+    height: 53vw;
+    max-width: 400px;
+    max-height: 300px;
+  }
+  .div_error {
+    width: 80% !important;
+  }
+}
+
+.div_2input {
+  display: flex;
+  justify-content: space-around;
+}
+
+.div_creatacc {
+  width: 500px;
+  display: inline;
+}
+
+input {
+  margin-top: 10px;
+  border: 0.5px grey solid;
+  height: 30px;
+  text-align: center;
+}
+
+.shakeanim {
+  animation: shake 0.2s ease-in-out 0s 2;
+  border: 0.5px red solid !important;
+  color: red !important;
+}
+
+.shakeanim::placeholder {
+  color: red;
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0rem;
+  }
+  25% {
+    margin-left: 1rem;
+  }
+  75% {
+    margin-left: -1rem;
+  }
+  100% {
+    margin-left: 0rem;
+  }
+}
+
+.one_row {
+  width: 93%;
+}
+
+.two_row1 {
+  width: 43%;
+}
+
+p {
+  text-align: center;
+  font-weight: 600;
+  font-family: cursive;
+}
+
+.signup {
+  margin-left: 10px;
+  width: 30%;
+  height: 30px;
+  background-color: rgb(108, 99, 255);
+  color: white;
+  border: 0;
+}
+
+.signup:hover {
+  cursor: pointer;
+  background-color: rgb(68, 59, 245);
+}
+
+.sendmail {
+  width: 80%;
+  max-width: 500px;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+.opacity {
+  background: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.div_error {
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  max-width: 600px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #f44336;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+.p_error {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  font-size: 0.875rem;
+  letter-spacing: 0.01071em;
+}
