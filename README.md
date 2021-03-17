@@ -1,13 +1,21 @@
 # Matcha <img src="https://img.shields.io/static/v1?label=&message=nodejs&logo=node.js&color=gray"/> <img src="https://img.shields.io/static/v1?label=&message=react&logo=react&color=gray"/>
 
 A Dating website where a user, after creating an account and finishing his/her profile by adding:
+
 -The gender
+
 -The sexuality
+
 -A biography
+
 -A list of interest
+
 -A profile picture
+
 can search for other users and Like them.
+
 If two Users Match (they both liked each other) they can start chating.
+
 A user can also Block or Report fake accounts.
 
 ## Installation
