@@ -69,8 +69,8 @@ JWT_KEY= <key>
 
 ## Screenshots
 
-![](Screenshots/register)</br>
-![](Screenshots/login)</br>
-![](Screenshots/Home)</br>
-![](Screenshots/Profile)</br>
-![](Screenshots/History)</br>
+![](Screenshots/register.png)</br>
+![](Screenshots/login.png)</br>
+![](Screenshots/Home.png)</br>
+![](Screenshots/Profile.png)</br>
+![](Screenshots/History.png)</br>
