@@ -12,7 +12,7 @@ A Dating website where a user, after creating an account and finishing his/her p
 
 -A profile picture
 
-can search for other users and Like them.
+can search for other users and connect with them.
 
 If two Users Match (they both liked each other) they can start chating.
 
